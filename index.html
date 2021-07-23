@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="container">
+
+    <br>
+
+    <div class="row">
+        <div class="col-sm">
+            <h2>These are a few of my favorite things:</h2>
+        </div>
+    </div>
+    <br>
+    <table id="favoriteThings" class="table table-light table-striped">
+        <tr>
+            <th>Favorite Item</th>
+            <th>Comment</th>
+        </tr>
+        <tr>
+            <td>Annabel - my cat</td>
+            <td>She is the best kitty ever!!</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <form>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Add New Favorite Thing</h4>
+                <div class="row">
+
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-favorite-thing">Favorite Item:</label>
+                            <input type="text" class="form-control" id="new-favorite-thing">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="new-comment">Comment:</label>
+                            <input type="text" class="form-control" id="new-comment">
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="col-sm-2">
+                    <button id="add" class="btn btn-primary form-control" onclick="addFavorite();return false;">Add new favorite</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="favorites.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
